@@ -1,0 +1,341 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\PersonalProfile.bundle.scp.css",
+      "PackagePath": "staticwebassets\\PersonalProfile.q3tm5fv7gx.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\comoros.png",
+      "PackagePath": "staticwebassets\\comoros.png"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\images\\projects\\amanahlogistics.png",
+      "PackagePath": "staticwebassets\\images\\projects\\amanahlogistics.png"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\images\\projects\\createorder.png",
+      "PackagePath": "staticwebassets\\images\\projects\\createorder.png"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\images\\projects\\dashboard.png",
+      "PackagePath": "staticwebassets\\images\\projects\\dashboard.png"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\images\\projects\\flutter app 1.jpg",
+      "PackagePath": "staticwebassets\\images\\projects\\flutter app 1.jpg"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\images\\projects\\flutter app 2.jpg",
+      "PackagePath": "staticwebassets\\images\\projects\\flutter app 2.jpg"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\images\\projects\\flutter app 3.jpg",
+      "PackagePath": "staticwebassets\\images\\projects\\flutter app 3.jpg"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\images\\projects\\flutter app 4.jpg",
+      "PackagePath": "staticwebassets\\images\\projects\\flutter app 4.jpg"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\images\\projects\\freewill1.jpg",
+      "PackagePath": "staticwebassets\\images\\projects\\freewill1.jpg"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\images\\projects\\freewill2.jpg",
+      "PackagePath": "staticwebassets\\images\\projects\\freewill2.jpg"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\images\\projects\\freewill3.jpg",
+      "PackagePath": "staticwebassets\\images\\projects\\freewill3.jpg"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\images\\projects\\freewill4.jpg",
+      "PackagePath": "staticwebassets\\images\\projects\\freewill4.jpg"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\images\\projects\\freewill5.jpg",
+      "PackagePath": "staticwebassets\\images\\projects\\freewill5.jpg"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\images\\projects\\freewill6.jpg",
+      "PackagePath": "staticwebassets\\images\\projects\\freewill6.jpg"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\images\\projects\\freewill7.jpg",
+      "PackagePath": "staticwebassets\\images\\projects\\freewill7.jpg"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
+    },
+    {
+      "Id": "D:\\PE Class\\my_portfolio\\PersonalProfile\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.PersonalProfile.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.PersonalProfile.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.PersonalProfile.props",
+      "PackagePath": "build\\PersonalProfile.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.PersonalProfile.props",
+      "PackagePath": "buildMultiTargeting\\PersonalProfile.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.PersonalProfile.props",
+      "PackagePath": "buildTransitive\\PersonalProfile.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
