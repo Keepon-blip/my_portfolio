@@ -1,11 +1,11 @@
 /* Global Styles */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap');
 
 :root {
-    --primary-color: #6c5ce7;
+    --primary-color: #F2F4F3;
     --secondary-color: #a29bfe;
     --dark-bg: #1e1e2e;
-    --light-text: #f8f9fa;
+    --light-text: #ffffff;
     --accent-color: #00cec9;
 }
 
@@ -17,15 +17,34 @@ html {
 
 body {
     font-family: 'Outfit', sans-serif;
-    background-color: var(--dark-bg);
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: var(--light-text);
     margin-bottom: 60px;
 }
 
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+.display-1 {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
 /* Navbar */
 .navbar {
-    background-color: rgba(30, 30, 46, 0.95) !important;
-    backdrop-filter: blur(10px);
+    background-color: rgba(30, 30, 46, 0.7) !important;
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -46,9 +65,11 @@ body {
 
 /* Footer */
 .footer {
-    background-color: rgba(30, 30, 46, 0.95) !important;
+    background-color: rgba(30, 30, 46, 0.7) !important;
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: #aaa;
+    color: #e0e0e0;
     padding: 1rem 0;
     position: absolute;
     bottom: 0;
@@ -59,33 +80,78 @@ body {
 
 /* Buttons */
 .btn-primary {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--light-text);
     border-radius: 50px;
-    padding: 0.5rem 1.5rem;
+    padding: 0.8rem 2rem;
     font-weight: 600;
     transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(108, 92, 231, 0.4);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+}
+
+.btn-outline-light {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    padding: 0.8rem 2rem;
+}
+
+.btn-outline-light:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.4);
 }
 
 /* Cards */
 .card {
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px) saturate(200%);
+    -webkit-backdrop-filter: blur(25px) saturate(200%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     color: var(--light-text);
-    border-radius: 15px;
-    transition: transform 0.3s ease;
+    border-radius: 24px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    background-color: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Profile Frame */
+.profile-frame {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    transform: rotate(2deg);
+    transition: transform 0.5s ease;
+    width: 50%;
+}
+
+.profile-frame:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+.profile-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Utility */
@@ -103,7 +169,7 @@ body {
 .section-title::after {
     content: '';
     display: block;
-    width:20%;
+    width: 20%;
     height: 4px;
     background: var(--primary-color);
     margin-top: 0.5rem;
@@ -112,5 +178,5 @@ body {
 
 /* Overrides */
 .text-muted {
-    color: #b0b3b8 !important;
+    color: #e0e0e0 !important;
 }

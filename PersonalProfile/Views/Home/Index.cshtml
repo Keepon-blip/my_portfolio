@@ -2,97 +2,54 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center hero-section py-5">
-    <h1 class="display-3 fw-bold text-primary mb-3">Hi, I'm Keepon Mirishoi</h1>
-    <p class="lead mb-4">Mobile App Developer | Entrepreneur | Software Engineer</p>
-    <div class="d-flex justify-content-center gap-3">
-        <a asp-controller="Home" asp-action="About" class="btn btn-primary btn-lg">More About Me</a>
-        <a asp-controller="Home" asp-action="Contact" class="btn btn-outline-light btn-lg">Get in Touch</a>
-    </div>
-</div>
-
-<div class="row mt-5">
-    <div class="col-md-12 mb-5">
-        <div class="card p-4">
-            <h3 class="section-title">What I Do</h3>
-            <div class="row g-4 mt-2">
-                <div class="col-md-4">
-                    <div class="d-flex align-items-start">
-                        <div class="fs-2 text-primary me-3">📱</div>
-                        <div>
-                            <h5 class="fw-bold">Mobile App Development</h5>
-                            <p class="text-muted">Specializing in Flutter, Design, Systems & Product Building.</p>
-                        </div>
-                    </div>
+<div class="container-fluid px-0">
+    <div class="row min-vh-100 align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="pe-lg-5">
+                <h1 class="display-1 fw-bold text-white mb-4">
+                    Designer<br>
+                    <span class="text-primary">& Dev.</span>
+                </h1>
+                <p class="lead text-muted mb-5" style="max-width: 500px;">
+                    A selection of websites, applications and graphic design projects. Made with happy clients, agencies and collaborators from around the globe.
+                </p>
+                <div class="d-flex gap-3">
+                    <a asp-controller="Home" asp-action="Projects" class="btn btn-primary btn-lg">View Projects</a>
+                    <a asp-controller="Home" asp-action="Contact" class="btn btn-outline-light btn-lg">Get in Touch</a>
                 </div>
-                <div class="col-md-4">
-                    <div class="d-flex align-items-start">
-                        <div class="fs-2 text-primary me-3">🚀</div>
-                        <div>
-                            <h5 class="fw-bold">Business & Ventures</h5>
-                            <p class="text-muted">Entrepreneurship (Amanah Logistics, Freewill™️ Clothing), Notion workspaces, and Product Marketing.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="d-flex align-items-start">
-                        <div class="fs-2 text-primary me-3">🎮</div>
-                        <div>
-                            <h5 class="fw-bold">Creative Design</h5>
-                            <p class="text-muted">Game design (2D puzzle/adventure), World-building, and Graphic Design.</p>
-                        </div>
-                    </div>
-                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="profile-frame">
+                <img src="~/images/profile.jpg" alt="Keepon Mirishoi" class="img-fluid">
             </div>
         </div>
     </div>
 </div>
 
-<div class="row">
-    <div class="col-md-6 mb-4">
-        <div class="card h-100 p-4">
-            <h3 class="section-title">Technical Skills</h3>
-            <ul class="list-unstyled mt-3">
-                <li class="mb-3 d-flex align-items-center">
-                    <span class="badge bg-primary me-2">Flutter</span> 
-                    Mobile development & Architecture
-                </li>
-                <li class="mb-3 d-flex align-items-center">
-                    <span class="badge bg-primary me-2">Backend</span> 
-                    Supabase Auth + Integration
-                </li>
-                <li class="mb-3 d-flex align-items-center">
-                    <span class="badge bg-primary me-2">APIs</span> 
-                    Google Cloud APIs, Places API
-                </li>
-                <li class="mb-3 d-flex align-items-center">
-                    <span class="badge bg-primary me-2">Tools</span> 
-                    Notion Automation, Template Building
-                </li>
-                <li class="mb-3 d-flex align-items-center">
-                    <span class="badge bg-primary me-2">Graphics</span> 
-                    Computer Graphics Fundamentals
-                </li>
-            </ul>
+<div class="row mt-5 pt-5">
+    <div class="col-12">
+        <h3 class="section-title mb-5">What I Do</h3>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card p-4 h-100">
+            <div class="fs-1 text-primary mb-3">📱</div>
+            <h4 class="fw-bold mb-3">Mobile App Development</h4>
+            <p class="text-muted">Specializing in Flutter, Design, Systems & Product Building. Creating seamless mobile experiences.</p>
         </div>
     </div>
-    <div class="col-md-6 mb-4">
-        <div class="card h-100 p-4">
-            <h3 class="section-title">Creative & Business</h3>
-            <ul class="list-unstyled mt-3">
-                <li class="mb-3">
-                    <strong>Storytelling:</strong> Game storytelling, Character/World design, Brand identity.
-                </li>
-                <li class="mb-3">
-                    <strong>Writing:</strong> Technical writing, Product storytelling, Copywriting.
-                </li>
-                <li class="mb-3">
-                    <strong>Design:</strong> Brochure creation, Simple graphic design for small businesses.
-                </li>
-                <li class="mb-3">
-                    <strong>Entrepreneurship:</strong> Product development, Marketing, Early-stage systems.
-                </li>
-            </ul>
+    <div class="col-md-4 mb-4">
+        <div class="card p-4 h-100">
+            <div class="fs-1 text-primary mb-3">🚀</div>
+            <h4 class="fw-bold mb-3">Business & Ventures</h4>
+            <p class="text-muted">Entrepreneurship (Amanah Logistics, Freewill™️ Clothing), Notion workspaces, and Product Marketing.</p>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card p-4 h-100">
+            <div class="fs-1 text-primary mb-3">🎮</div>
+            <h4 class="fw-bold mb-3">Creative Design</h4>
+            <p class="text-muted">Game design (2D puzzle/adventure), World-building, and Graphic Design. Bringing imagination to life.</p>
         </div>
     </div>
 </div>

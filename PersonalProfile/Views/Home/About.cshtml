@@ -2,98 +2,112 @@
     ViewData["Title"] = "About Me";
 }
 
-<div class="container py-5">
-    <h1 class="display-4 fw-bold text-primary mb-5">About Me</h1>
-
-    <div class="row mb-5">
-        <div class="col-lg-8">
-            <h2 class="section-title">Background</h2>
-            <p class="lead">
-                I am currently pursuing a degree in Software Engineering (SWE) in Xiamen University Malaysia. I have a strong foundation in 
-                software project management, quality assurance, AI principles and a knack for learning new technologies quickly.
-                I believe in writing clean, maintainable code and building user-centric applications. Over the years, I have developed a diverse skill set that spans mobile app development, business ventures, producitivity (with notion) and creative design.
-            </p>
-        </div>
-    </div>
-
-    <div class="row mb-5">
-        <div class="col-md-6">
-            <div class="card p-4 h-100">
-                <h3 class="mb-4">🎓 Education</h3>
-                <div class="mb-3">
-                    <h5 class="fw-bold">Bachelor of Software Engineering (SWE)</h5>
-                    <p class="text-muted mb-0">Xiamen University Malaysia</p>
-                    <small>2023 - Present</small>
-                </div>
-                <hr class="border-secondary">
-                <div class="mb-3">
-                    <h5 class="fw-bold">Software Development Certificate</h5>
-                    <p class="text-muted mb-0">Zalego Institute, Kenya</p>
-                    <small>2022</small>
-                </div>
-                <hr class="border-secondary">
-                <div class="mb-3">
-                    <h5 class="fw-bold">Secondary Education</h5>
-                    <p class="text-muted mb-0">Mang'u High School, Kenya</p>
-                    <small>2018 - 2022</small>
+<div class="container-fluid px-0 mb-5">
+    <div class="row min-vh-100 align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="pe-lg-5">
+                <h1 class="display-1 fw-bold text-white mb-4">About<br><span class="text-primary">Me.</span></h1>
+                <h3 class="section-title mb-3">Background</h3>
+                <p class="lead text-muted mb-4" style="max-width: 600px;">
+                    I am currently pursuing a degree in Software Engineering (SWE) in Xiamen University Malaysia. I have a strong foundation in 
+                    software project management, quality assurance, AI principles and a knack for learning new technologies quickly.
+                </p>
+                <p class="text-muted" style="max-width: 600px;">
+                    I believe in writing clean, maintainable code and building user-centric applications. Over the years, I have developed a diverse skill set that spans mobile app development, business ventures, productivity (with Notion) and creative design.
+                </p>
+                <div class="mt-4">
+                    <a href="~/files/KEEPON'S RESUME.pdf" download class="btn btn-primary btn-lg">
+                        Download Resume
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="card p-4 h-100">
-                <h3 class="mb-4">💻 Technical Skills</h3>
-                <div class="mb-3">
-                    <div class="d-flex justify-content-between">
-                        <span>HTML / CSS / JS</span>
-                        <span>85%</pan>
-                    </div>
-                    <div class="progress" style="height: 8px;">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 85%"></div>
-                    </div>
-                </div><div class="mb-3">
-                    <div class="d-flex justify-content-between">
-                        <span>Flutter / Dart</span>
-                        <span>95%</span>
-                    </div>
-                    <div class="progress" style="height: 8px;">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 95%"></div>
-                    </div>
+        <div class="col-lg-6">
+            <div class="profile-frame">
+                <img src="~/images/profile.jpg" alt="Keepon Mirishoi" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-5">
+    <div class="col-md-6 mb-4">
+        <div class="card p-4 h-100">
+            <h3 class="mb-4 text-primary">🎓 Education</h3>
+            <div class="mb-3">
+                <h5 class="fw-bold">Bachelor of Software Engineering (SWE)</h5>
+                <p class="text-muted mb-0">Xiamen University Malaysia</p>
+                <small class="text-primary">2023 - Present</small>
+            </div>
+            <hr class="border-secondary">
+            <div class="mb-3">
+                <h5 class="fw-bold">Software Development Certificate</h5>
+                <p class="text-muted mb-0">Zalego Institute, Kenya</p>
+                <small class="text-primary">2022</small>
+            </div>
+            <hr class="border-secondary">
+            <div class="mb-3">
+                <h5 class="fw-bold">Secondary Education</h5>
+                <p class="text-muted mb-0">Mang'u High School, Kenya</p>
+                <small class="text-primary">2018 - 2022</small>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="card p-4 h-100">
+            <h3 class="mb-4 text-primary">💻 Technical Skills</h3>
+            <div class="mb-3">
+                <div class="d-flex justify-content-between mb-1">
+                    <span>HTML / CSS / JS</span>
+                    <span>85%</span>
                 </div>
-                <div class="mb-3">
-                    <div class="d-flex justify-content-between">
-                        <span>Supabase / Backend</span>
-                        <span>85%</span>
-                    </div>
-                    <div class="progress" style="height: 8px;">
-                        <div class="progress-bar bg-info" role="progressbar" style="width: 85%"></div>
-                    </div>
+                <div class="progress" style="height: 8px; background: rgba(255,255,255,0.1);">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 85%"></div>
                 </div>
-                <div class="mb-3">
-                    <div class="d-flex justify-content-between">
-                        <span>Notion Workspace Integration & Automation</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="progress" style="height: 8px;">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 90%"></div>
-                    </div>
+            </div>
+            <div class="mb-3">
+                <div class="d-flex justify-content-between mb-1">
+                    <span>Flutter / Dart</span>
+                    <span>95%</span>
                 </div>
-                <div class="mb-3">
-                    <div class="d-flex justify-content-between">
-                        <span>Google Cloud APIs</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="progress" style="height: 8px;">
-                        <div class="progress-bar bg-warning" role="progressbar" style="width: 80%"></div>
-                    </div>
+                <div class="progress" style="height: 8px; background: rgba(255,255,255,0.1);">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 95%"></div>
                 </div>
-                <div class="mb-3">
-                    <div class="d-flex justify-content-between">
-                        <span>Game Development / Unity / C#</span>
-                        <span>50%</span>
-                    </div>
-                    <div class="progress" style="height: 8px;">
-                        <div class="progress-bar bg-info" role="progressbar" style="width: 50%"></div>
-                    </div>
+            </div>
+            <div class="mb-3">
+                <div class="d-flex justify-content-between mb-1">
+                    <span>Supabase / Backend</span>
+                    <span>85%</span>
+                </div>
+                <div class="progress" style="height: 8px; background: rgba(255,255,255,0.1);">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="d-flex justify-content-between mb-1">
+                    <span>Notion Workspace Integration & Automation</span>
+                    <span>90%</span>
+                </div>
+                <div class="progress" style="height: 8px; background: rgba(255,255,255,0.1);">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="d-flex justify-content-between mb-1">
+                    <span>Google Cloud APIs</span>
+                    <span>80%</span>
+                </div>
+                <div class="progress" style="height: 8px; background: rgba(255,255,255,0.1);">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="d-flex justify-content-between mb-1">
+                    <span>Game Development / Unity / C#</span>
+                    <span>50%</span>
+                </div>
+                <div class="progress" style="height: 8px; background: rgba(255,255,255,0.1);">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 50%"></div>
                 </div>
             </div>
         </div>
