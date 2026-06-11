@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -8,37 +8,15 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/PersonalProfile.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Keepon Mirishoi</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="About">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="~/files/KEEPON'S RESUME.pdf" download>Resume</a>
-                        </li>
-                    </ul>
-                </div>   
-            </div>
-        </nav>
+    <div class="tech-background">
+        <div class="tech-globe"></div>
+        <div class="tech-overlay"></div>
+    </div>
+    <header class="top-identity-wrapper">
+        <a class="top-identity" asp-controller="Home" asp-action="Index">Keepon Mirishoi</a>
     </header>
     <div class="container">
         <main role="main" class="pb-3">
@@ -46,11 +24,47 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted bg-dark">
+    <footer class="border-top footer text-muted bg-dark py-4 mt-5">
         <div class="container text-light">
-            &copy; 2025 - Keepon Mirishoi
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <h5 class="fw-bold mb-1 text-white">Keepon Mirishoi</h5>
+                    <p class="small text-muted mb-0">Software Engineer | Co-Founder @@ Amanah Logistics</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3 mb-2">
+                        <a href="https://github.com/Keepon-blip" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none small"><i class="bi bi-github"></i> GitHub</a>
+                        <a href="https://linkedin.com/in/keepon-mirishoi" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none small"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                        <a href="mailto:skmephep@gmail.com" class="text-light text-decoration-none small"><i class="bi bi-envelope-fill"></i> Email</a>
+                    </div>
+                    <p class="small text-muted mb-0">&copy; 2025 Keepon Mirishoi</p>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <!-- Floating Bottom Navigation Dock -->
+    <nav class="floating-dock">
+        <a asp-controller="Home" asp-action="Index" class="dock-item @(ViewContext.RouteData.Values["action"]?.ToString() == "Index" ? "active" : "")" data-label="Home">
+            <i class="bi bi-house-fill"></i>
+        </a>
+        <a asp-controller="Home" asp-action="About" class="dock-item @(ViewContext.RouteData.Values["action"]?.ToString() == "About" ? "active" : "")" data-label="About">
+            <i class="bi bi-person-fill"></i>
+        </a>
+        <a asp-controller="Home" asp-action="Projects" class="dock-item @(ViewContext.RouteData.Values["action"]?.ToString() == "Projects" ? "active" : "")" data-label="Projects">
+            <i class="bi bi-briefcase-fill"></i>
+        </a>
+        <a asp-controller="Home" asp-action="Resume" class="dock-item @(ViewContext.RouteData.Values["action"]?.ToString() == "Resume" ? "active" : "")" data-label="Resume">
+            <i class="bi bi-file-earmark-text-fill"></i>
+        </a>
+        <a href="https://github.com/Keepon-blip" target="_blank" rel="noopener noreferrer" class="dock-item" data-label="GitHub">
+            <i class="bi bi-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/keepon-mirishoi" target="_blank" rel="noopener noreferrer" class="dock-item" data-label="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+        </a>
+    </nav>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

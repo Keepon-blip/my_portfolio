@@ -17,10 +17,10 @@ html {
 
 body {
     font-family: 'Outfit', sans-serif;
-    background: url('../images/background.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background: #060b13; /* Solid deep cyber dark background */
     color: var(--light-text);
-    margin-bottom: 60px;
+    margin-bottom: 120px; /* Space for the floating bottom dock */
+    overflow-x: hidden; /* Prevent horizontal scrollbars from floating background */
 }
 
 /* Typography */
@@ -65,17 +65,48 @@ h6 {
 
 /* Footer */
 .footer {
-    background-color: rgba(30, 30, 46, 0.7) !important;
+    background-color: rgba(30, 30, 46, 0.25) !important;
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: #e0e0e0;
-    padding: 1rem 0;
-    position: absolute;
-    bottom: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    color: #ccd0d4;
+    padding: 2.5rem 0;
+    margin-top: 6rem;
     width: 100%;
-    white-space: nowrap;
-    line-height: 60px;
+}
+
+/* Top Floating Identity Watermark */
+.top-identity-wrapper {
+    position: fixed;
+    top: 30px;
+    left: 40px;
+    z-index: 1000;
+    pointer-events: auto;
+}
+
+.top-identity {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease, opacity 0.3s ease;
+    opacity: 0.75;
+}
+
+.top-identity:hover {
+    color: var(--light-text);
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .top-identity-wrapper {
+        position: absolute;
+        top: 25px;
+        left: 20px;
+    }
 }
 
 /* Buttons */
@@ -145,13 +176,20 @@ h6 {
 }
 
 .profile-frame:hover {
-    transform: rotate(0deg) scale(1.02);
+    transform: rotate(0deg) scale(1.04);
+    box-shadow: 0 25px 60px rgba(0, 206, 201, 0.2);
+    border-color: rgba(0, 206, 201, 0.4);
 }
 
 .profile-frame img {
     width: 100%;
     height: auto;
     display: block;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.profile-frame:hover img {
+    transform: scale(1.08);
 }
 
 /* Utility */
@@ -178,5 +216,289 @@ h6 {
 
 /* Overrides */
 .text-muted {
-    color: #e0e0e0 !important;
+    color: #ccd0d4 !important;
+}
+
+/* Floating Navigation Dock */
+.floating-dock {
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    display: flex;
+    gap: 12px;
+    padding: 10px 20px;
+    background: rgba(30, 30, 46, 0.55);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 
+                inset 0 1px 1px rgba(255, 255, 255, 0.1),
+                0 0 20px rgba(0, 206, 201, 0.08);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.floating-dock:hover {
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.6), 
+                inset 0 1px 1px rgba(255, 255, 255, 0.2),
+                0 0 30px rgba(0, 206, 201, 0.2);
+}
+
+.dock-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.4rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    text-decoration: none;
+}
+
+.dock-item:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-8px) scale(1.15);
+    box-shadow: 0 5px 15px rgba(0, 206, 201, 0.3);
+}
+
+.dock-item.active {
+    color: var(--accent-color);
+    background: rgba(0, 206, 201, 0.12);
+    border-color: rgba(0, 206, 201, 0.45);
+    box-shadow: 0 0 15px rgba(0, 206, 201, 0.35);
+}
+
+/* Tooltip labels for dock */
+.dock-item::before {
+    content: attr(data-label);
+    position: absolute;
+    bottom: 60px;
+    background: rgba(20, 20, 31, 0.95);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.dock-item:hover::before {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Skill Card & Chips */
+.skill-card {
+    background: rgba(30, 30, 46, 0.4) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 20px !important;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 206, 201, 0.35) !important;
+    box-shadow: 0 10px 30px rgba(0, 206, 201, 0.15) !important;
+}
+
+.skill-chip {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #ccd0d4;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    cursor: default;
+}
+
+.skill-card:hover .skill-chip {
+    border-color: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+}
+
+.skill-chip:hover {
+    color: #ffffff !important;
+    background: rgba(0, 206, 201, 0.18) !important;
+    border-color: var(--accent-color) !important;
+    box-shadow: 0 0 12px rgba(0, 206, 201, 0.45);
+    transform: scale(1.06) translateY(-1px);
+}
+
+/* Experience Timeline */
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
+    margin-left: 10px;
+}
+
+.timeline-item {
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -27px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #1e1e2e;
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 0 8px var(--accent-color);
+    z-index: 2;
+}
+
+/* Custom colors for timeline items */
+.timeline-item:nth-child(3)::before {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 8px var(--secondary-color);
+}
+
+.timeline-item:nth-child(5)::before {
+    border-color: #00cec9;
+    box-shadow: 0 0 8px #00cec9;
+}
+
+/* Fade In On Scroll Animation */
+.fade-in-on-scroll {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.fade-in-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsiveness for floating dock */
+@media (max-width: 576px) {
+    .floating-dock {
+        bottom: 15px;
+        gap: 6px;
+        padding: 8px 12px;
+        border-radius: 30px;
+    }
+    .dock-item {
+        width: 38px;
+        height: 38px;
+        font-size: 1.1rem;
+    }
+    .dock-item::before {
+        bottom: 50px;
+        font-size: 0.7rem;
+        padding: 3px 8px;
+    }
+    body {
+        margin-bottom: 90px;
+    }
+}
+
+/* Tech Background Styling */
+.tech-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -9999;
+    overflow: hidden;
+    background: #060b13;
+    pointer-events: none;
+}
+
+.tech-globe {
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    width: 950px;
+    height: 950px;
+    background-image: url('../images/tech-globe.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.26;
+    pointer-events: none;
+    transform-origin: center center;
+    animation: techGlobeAnim 140s linear infinite;
+    filter: drop-shadow(0 0 25px rgba(0, 206, 201, 0.15));
+}
+
+.tech-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 80% 20%, rgba(10, 25, 47, 0.25) 0%, rgba(6, 11, 19, 0.95) 70%);
+    pointer-events: none;
+}
+
+@keyframes techGlobeAnim {
+    0% {
+        transform: rotate(0deg) translate(0, 0) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) translate(-25px, 20px) scale(1.02);
+    }
+    100% {
+        transform: rotate(360deg) translate(0, 0) scale(1);
+    }
+}
+
+/* Reduced Motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .tech-globe {
+        animation: none !important;
+    }
+    .fade-in-on-scroll {
+        transition: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
+
+/* Responsive adjustment for the globe background */
+@media (max-width: 992px) {
+    .tech-globe {
+        width: 750px;
+        height: 750px;
+        top: -5%;
+        right: -15%;
+        opacity: 0.2;
+    }
+}
+
+@media (max-width: 576px) {
+    .tech-globe {
+        width: 480px;
+        height: 480px;
+        top: 5%;
+        right: -20%;
+        opacity: 0.16;
+    }
 }

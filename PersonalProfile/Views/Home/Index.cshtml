@@ -1,55 +1,73 @@
-﻿@{
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="container-fluid px-0">
+<div class="container-fluid px-0 mb-5 fade-in-on-scroll">
     <div class="row min-vh-100 align-items-center">
-        <div class="col-lg-6 mb-5 mb-lg-0">
+        <div class="col-lg-7 mb-5 mb-lg-0">
             <div class="pe-lg-5">
                 <h1 class="display-1 fw-bold text-white mb-4">
-                    Designer<br>
-                    <span class="text-primary">& Dev.</span>
+                    Software Engineer<br>
+                    <span class="text-primary">& Startup Founder.</span>
                 </h1>
-                <p class="lead text-muted mb-5" style="max-width: 500px;">
-                    A selection of websites, applications and graphic design projects. Made with happy clients, agencies and collaborators from around the globe.
+                <p class="lead text-muted mb-3" style="max-width: 600px;">
+                    4th Year Software Engineering student at <strong>Xiamen University Malaysia</strong>.
+                </p>
+                <p class="text-muted mb-3" style="max-width: 600px;">
+                    Co-Founder of <strong>Amanah Logistics</strong> and creator of production-ready software solutions
+                    spanning logistics networks, e-commerce, mobile applications, cloud deployment, and game
+                    development.
+                </p>
+                <p class="text-muted mb-5" style="max-width: 600px;">
+                    Passionate about building highly scalable products, automating workflows, and solving challenging
+                    real-world problems.
                 </p>
                 <div class="d-flex gap-3">
-                    <a asp-controller="Home" asp-action="Projects" class="btn btn-primary btn-lg">View Projects</a>
-                    <a asp-controller="Home" asp-action="Contact" class="btn btn-outline-light btn-lg">Get in Touch</a>
+                    <a asp-controller="Home" asp-action="Projects"
+                       class="btn btn-primary btn-lg d-flex align-items-center gap-2">
+                        <i class="bi bi-briefcase-fill"></i> View Projects
+                    </a>
+                    <a asp-controller="Home" asp-action="Contact"
+                       class="btn btn-outline-light btn-lg d-flex align-items-center gap-2">
+                        <i class="bi bi-envelope-fill"></i> Get in Touch
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="col-lg-6">
-            <div class="profile-frame">
-                <img src="~/images/profile.jpg" alt="Keepon Mirishoi" class="img-fluid">
+        <div class="col-lg-5">
+            <div class="profile-frame mx-auto">
+                <img src="~/images/profile.jpeg" alt="Keepon Mirishoi" class="img-fluid">
             </div>
         </div>
     </div>
 </div>
 
-<div class="row mt-5 pt-5">
+<div class="row mt-5 pt-5 fade-in-on-scroll">
     <div class="col-12">
-        <h3 class="section-title mb-5">What I Do</h3>
+        <h3 class="section-title mb-5">What I Build</h3>
     </div>
     <div class="col-md-4 mb-4">
         <div class="card p-4 h-100">
-            <div class="fs-1 text-primary mb-3">📱</div>
-            <h4 class="fw-bold mb-3">Mobile App Development</h4>
-            <p class="text-muted">Specializing in Flutter, Design, Systems & Product Building. Creating seamless mobile experiences.</p>
+            <div class="fs-1 text-primary mb-3"><i class="bi bi-cpu-fill"></i></div>
+            <h4 class="fw-bold mb-3">Full Stack Development</h4>
+            <p class="text-muted">Designing and developing scalable web systems, MVC frameworks, and APIs. Skilled in
+                ASP.NET Core, Node.js, and containerized deployments.</p>
+            </div>
         </div>
-    </div>
-    <div class="col-md-4 mb-4">
-        <div class="card p-4 h-100">
-            <div class="fs-1 text-primary mb-3">🚀</div>
-            <h4 class="fw-bold mb-3">Business & Ventures</h4>
-            <p class="text-muted">Entrepreneurship (Amanah Logistics, Freewill™️ Clothing), Notion workspaces, and Product Marketing.</p>
-        </div>
-    </div>
-    <div class="col-md-4 mb-4">
-        <div class="card p-4 h-100">
-            <div class="fs-1 text-primary mb-3">🎮</div>
-            <h4 class="fw-bold mb-3">Creative Design</h4>
-            <p class="text-muted">Game design (2D puzzle/adventure), World-building, and Graphic Design. Bringing imagination to life.</p>
-        </div>
-    </div>
-</div>
+        <div class="col-md-4 mb-4">
+            <div class="card p-4 h-100">
+                <div class="fs-1 text-primary mb-3"><i class="bi bi-phone-fill"></i></div>
+                <h4 class="fw-bold mb-3">Mobile & Cloud Systems</h4>
+                <p class="text-muted">Building cross-platform apps with Flutter and Dart. Integrating secure backends,
+                    realtime databases (Supabase, Firebase), and AWS cloud APIs.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card p-4 h-100">
+                    <div class="fs-1 text-primary mb-3"><i class="bi bi-unity"></i></div>
+                    <h4 class="fw-bold mb-3">Unity Game Dev</h4>
+                    <p class="text-muted">Creating immersive 3D interactive experiences. Experienced in C# scripting, Unity URP
+                        pipelines, and environment/interface design.</p>
+                    </div>
+                </div>
+            </div>
