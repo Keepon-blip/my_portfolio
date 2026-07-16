@@ -2,36 +2,42 @@
     ViewData["Title"] = "Projects";
 }
 
-<div class="container py-5 fade-in-on-scroll">
-    <h1 class="display-4 fw-bold text-primary mb-5">Projects & Ventures</h1>
+<div class="container py-5 fade-in-on-scroll projects-page">
+    <header class="projects-header mb-5">
+        <span class="projects-eyebrow">Selected work</span>
+        <h1 class="display-4 text-primary mb-3">Projects & Ventures</h1>
+        <p class="text-muted mb-0">Compact case studies covering the problem, my contribution, implementation, and outcome.</p>
+    </header>
 
-    <div class="row g-5">
+    <div class="row g-5 projects-grid">
         <!-- 1. Amanah Logistics (Featured Project - Full Width) -->
-        <div class="col-lg-12 mb-4">
-            <div class="card overflow-hidden">
-                <div class="row g-0">
-                    <div class="col-md-6">
-                        <div id="amanahCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+        <div class="col-lg-12 mb-4 project-priority-1">
+            <article class="card overflow-hidden project-card project-card-featured">
+                <div class="row g-0 project-featured-layout">
+                    <div class="col-md-5 project-media-column">
+                        <div id="amanahCarousel" class="carousel slide h-100 project-carousel browser-carousel" data-bs-ride="carousel" aria-label="Amanah Logistics screenshots">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#amanahCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Show Amanah screenshot 1"></button>
+                                <button type="button" data-bs-target="#amanahCarousel" data-bs-slide-to="1" aria-label="Show Amanah screenshot 2"></button>
+                                <button type="button" data-bs-target="#amanahCarousel" data-bs-slide-to="2" aria-label="Show Amanah screenshot 3"></button>
+                                <button type="button" data-bs-target="#amanahCarousel" data-bs-slide-to="3" aria-label="Show Amanah screenshot 4"></button>
+                                <button type="button" data-bs-target="#amanahCarousel" data-bs-slide-to="4" aria-label="Show Amanah screenshot 5"></button>
+                            </div>
                             <div class="carousel-inner h-100">
                                 <div class="carousel-item active h-100">
-                                    <img src="~/images/amanah2.jpeg" class="d-block w-100 h-100"
-                                         style="object-fit: cover; min-height: 350px;" alt="Amanah Dashboard">
+                                    <img src="~/images/amanah2.jpeg" class="d-block w-100 project-image project-image-cover" alt="Amanah Dashboard">
                                 </div>
                                 <div class="carousel-item h-100">
-                                    <img src="~/images/amanah3.jpeg" class="d-block w-100 h-100"
-                                         style="object-fit: cover; min-height: 350px;" alt="Order Tracking">
+                                    <img src="~/images/amanah3.jpeg" class="d-block w-100 project-image project-image-cover" loading="lazy" alt="Order Tracking">
                                 </div>
                                 <div class="carousel-item h-100">
-                                    <img src="~/images/amanah4.png" class="d-block w-100 h-100"
-                                         style="object-fit: cover; min-height: 350px;" alt="Order Tracking">
+                                    <img src="~/images/amanah4.png" class="d-block w-100 project-image project-image-cover" loading="lazy" alt="Order Tracking">
                                 </div>
                                 <div class="carousel-item h-100">
-                                    <img src="~/images/projects/dashboard.png" class="d-block w-100 h-100"
-                                         style="object-fit: cover; min-height: 350px;" alt="Order Tracking">
+                                    <img src="~/images/projects/dashboard.png" class="d-block w-100 project-image project-image-cover" loading="lazy" alt="Order Tracking">
                                 </div>
                                 <div class="carousel-item h-100">
-                                    <img src="~/images/projects/createorder.png" class="d-block w-100 h-100"
-                                         style="object-fit: cover; min-height: 350px;" alt="Admin Panel">
+                                    <img src="~/images/projects/createorder.png" class="d-block w-100 project-image project-image-cover" loading="lazy" alt="Admin Panel">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#amanahCarousel"
@@ -46,32 +52,51 @@
                             </button>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-7">
                         <div class="card-body p-5 d-flex flex-column justify-content-center h-100">
                             <div class="d-flex justify-content-between align-items-center mb-3">
                                 <h3 class="card-title fw-bold text-primary mb-0">Amanah Logistics</h3>
-                                <span class="badge bg-success px-3 py-2">Co-Founder & Lead Dev</span>
+                                <span class="badge bg-success px-3 py-2">Jan–Dec 2025</span>
                             </div>
-                            <p class="card-text lead text-muted">
-                                Amanah Logistics is a full-stack logistics management platform developed to digitize and
-                                automate last-mile delivery operations. The system enables businesses to manage orders,
-                                assign riders, track deliveries in real time, and monitor operational performance
-                                through a centralized administrative dashboard.
-                                <br><br>
-                                As Co-Founder and Lead Developer, I designed the platform architecture and implemented
-                                core features including order management, rider dispatching, route tracking, customer
-                                notifications, and business analytics. The project combines web, mobile, and cloud
-                                technologies to create a scalable logistics ecosystem.
+                            <p class="card-text lead text-muted project-description">
+                                Full-stack logistics platform supporting customers, businesses, riders, and
+                                administrators through connected web, mobile, and cloud workflows.
                             </p>
 
+                            <div class="project-summary">
+                                <section>
+                                    <h6>Problem</h6>
+                                    <p>Last-mile delivery teams need one place to manage orders, dispatch riders, track deliveries, and coordinate updates.</p>
+                                </section>
+                                <section>
+                                    <h6>My role</h6>
+                                    <p>Co-Founder and Full Stack Developer responsible for UI/UX, architecture, APIs, testing, debugging, and deployment.</p>
+                                </section>
+                                <section>
+                                    <h6>What I built</h6>
+                                    <ul>
+                                        <li>Order management and rider dispatch workflows</li>
+                                        <li>More than 20 RESTful APIs with Node.js and Express.js</li>
+                                        <li>Flutter order acceptance, GPS navigation, earnings, history, and live status features</li>
+                                        <li>Supabase real-time workflows and AWS EC2 deployment with Docker and Nginx</li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h6>Outcome or impact</h6>
+                                    <p>Centralizes delivery operations across customer, business, rider, and administrator experiences.</p>
+                                </section>
+                            </div>
+
                             <div class="mb-4">
-                                <h6 class="fw-bold text-white mb-2">Tech Stack:</h6>
+                                <h6 class="fw-bold text-white mb-2">Key technologies</h6>
                                 <div class="d-flex flex-wrap gap-2">
-                                    <span class="badge bg-secondary font-monospace">Flutter</span>
+                                    <span class="badge bg-secondary font-monospace">React</span>
                                     <span class="badge bg-secondary font-monospace">Node.js</span>
+                                    <span class="badge bg-secondary font-monospace">Express.js</span>
+                                    <span class="badge bg-secondary font-monospace">Flutter</span>
                                     <span class="badge bg-secondary font-monospace">Supabase</span>
-                                    <span class="badge bg-secondary font-monospace">AWS</span>
-                                    <span class="badge bg-secondary font-monospace">Google Maps API</span>
+                                    <span class="badge bg-secondary font-monospace">AWS EC2</span>
+                                    <span class="badge bg-secondary font-monospace">Nginx</span>
                                 </div>
                             </div>
 
@@ -82,42 +107,52 @@
                                 </a>
                                 <a href="https://github.com/Keepon-blip" target="_blank" rel="noopener noreferrer"
                                    class="btn btn-outline-light d-flex align-items-center gap-2">
-                                    <i class="bi bi-github"></i> GitHub
+                                    <i class="bi bi-github"></i> GitHub Profile
                                 </a>
                             </div>
+
+                            <details class="project-details mt-4">
+                                <summary>Detailed technical information</summary>
+                                <p class="text-muted small mt-3 mb-0">
+                                    The platform combines a centralized administrative dashboard, mobile rider workflows,
+                                    backend services, real-time data, cloud deployment, route tracking, customer
+                                    notifications, and business analytics.
+                                </p>
+                            </details>
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
         </div>
 
         <!-- 2. Amanah Rider's App (Left Column-6) -->
-        <div class="col-md-6 mb-4">
-            <div class="card h-100 d-flex flex-column justify-content-between">
-                <div>
+        <div class="col-md-6 mb-4 project-priority-3">
+            <article class="card project-card project-card-secondary rider-project-card">
                     <!-- Carousel for Rider App -->
-                    <div id="riderCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div id="riderCarousel" class="carousel slide project-carousel phone-carousel" data-bs-ride="carousel" aria-label="Amanah Rider app screenshots">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#riderCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Show rider app screenshot 1"></button>
+                            <button type="button" data-bs-target="#riderCarousel" data-bs-slide-to="1" aria-label="Show rider app screenshot 2"></button>
+                            <button type="button" data-bs-target="#riderCarousel" data-bs-slide-to="2" aria-label="Show rider app screenshot 3"></button>
+                            <button type="button" data-bs-target="#riderCarousel" data-bs-slide-to="3" aria-label="Show rider app screenshot 4"></button>
+                            <button type="button" data-bs-target="#riderCarousel" data-bs-slide-to="4" aria-label="Show rider app screenshot 5"></button>
+                        </div>
                         <div class="carousel-inner bg-dark text-center"
                              style="border-top-left-radius: 24px; border-top-right-radius: 24px;">
                             <div class="carousel-item active">
-                                <img src="~/images/amanah1.jpeg" class="d-block mx-auto"
-                                     style="height: 400px; object-fit: contain;" alt="Rider App Screen 1">
+                                <img src="~/images/amanah1.jpeg" class="d-block mx-auto project-image project-image-contain" loading="lazy" alt="Rider App Screen 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="~/images/projects/flutter app 1.jpg" class="d-block mx-auto"
-                                     style="height: 400px; object-fit: contain;" alt="Rider App Screen 1">
+                                <img src="~/images/projects/flutter app 1.jpg" class="d-block mx-auto project-image project-image-contain" loading="lazy" alt="Rider App Screen 2">
                             </div>
                             <div class="carousel-item">
-                                <img src="~/images/projects/flutter app 2.jpg" class="d-block mx-auto"
-                                     style="height: 400px; object-fit: contain;" alt="Rider App Screen 2">
+                                <img src="~/images/projects/flutter app 2.jpg" class="d-block mx-auto project-image project-image-contain" loading="lazy" alt="Rider App Screen 3">
                             </div>
                             <div class="carousel-item">
-                                <img src="~/images/projects/flutter app 4.jpg" class="d-block mx-auto"
-                                     style="height: 400px; object-fit: contain;" alt="Rider App Screen 3">
+                                <img src="~/images/projects/flutter app 4.jpg" class="d-block mx-auto project-image project-image-contain" loading="lazy" alt="Rider App Screen 4">
                             </div>
                             <div class="carousel-item">
-                                <img src="~/images/projects/flutter app 3.jpg" class="d-block mx-auto"
-                                     style="height: 400px; object-fit: contain;" alt="Rider App Screen 4">
+                                <img src="~/images/projects/flutter app 3.jpg" class="d-block mx-auto project-image project-image-contain" loading="lazy" alt="Rider App Screen 5">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#riderCarousel"
@@ -132,61 +167,88 @@
                         </button>
                     </div>
 
+                    <div class="rider-project-content">
                     <div class="card-body p-4">
                         <h4 class="card-title fw-bold text-info">Amanah Rider's App</h4>
-                        <p class="card-text mt-3 text-muted">
-                            The Amanah Rider App is the mobile companion application for the Amanah Logistics ecosystem.
-                            Built to streamline delivery operations, it enables riders to receive assignments, navigate
-                            delivery routes, update delivery statuses, and monitor earnings directly from their
-                            smartphones.
-
-                            The application focuses on simplicity, reliability, and real-time communication between
-                            riders and dispatch operations, ensuring efficient delivery execution and improved customer
-                            satisfaction.
+                        <p class="card-text mt-3 text-muted project-description">
+                            Flutter mobile companion for the Amanah Logistics platform, connecting riders with delivery
+                            assignments and dispatch workflows.
                         </p>
+
+                        <div class="project-summary mt-3">
+                            <section>
+                                <h6>Problem</h6>
+                                <p>Riders need a mobile workflow for receiving assignments, navigating routes, and reporting delivery progress.</p>
+                            </section>
+                            <section>
+                                <h6>My role</h6>
+                                <p>Designed and developed the rider application as Co-Founder and Developer.</p>
+                            </section>
+                            <section>
+                                <h6>What I built</h6>
+                                <ul>
+                                    <li>Delivery assignment and status-update flows</li>
+                                    <li>Route navigation and earnings monitoring</li>
+                                    <li>Real-time communication with dispatch operations</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h6>Outcome or impact</h6>
+                                <p>Provides riders with a dedicated mobile interface for carrying out Amanah delivery work.</p>
+                            </section>
+                        </div>
                     </div>
-                </div>
 
                 <div class="card-body p-4 pt-0">
                     <div class="mb-4">
-                        <h6 class="fw-bold text-white mb-2">Tech Stack:</h6>
+                        <h6 class="fw-bold text-white mb-2">Key technologies</h6>
                         <div class="d-flex flex-wrap gap-2">
                             <span class="badge bg-secondary font-monospace">Flutter</span>
-                            <span class="badge bg-secondary font-monospace">Dart</span>
                             <span class="badge bg-secondary font-monospace">Supabase</span>
-                            <span class="badge bg-secondary font-monospace">Google Maps API</span>
+                            <span class="badge bg-secondary font-monospace">REST APIs</span>
                         </div>
                     </div>
+
+                    <details class="project-details">
+                        <summary>Detailed technical information</summary>
+                        <p class="text-muted small mt-3 mb-0">
+                            The application uses Flutter with Supabase data services and REST APIs for rider-facing
+                            order acceptance, GPS navigation, earnings, delivery history, and live status updates.
+                        </p>
+                    </details>
                 </div>
-            </div>
+                </div>
+            </article>
         </div>
 
         <!-- 3. Freewill Store (Right Column-6) -->
-        <div class="col-md-6 mb-4">
-            <div class="card h-100 d-flex flex-column justify-content-between">
+        <div class="col-md-6 mb-4 project-priority-4">
+            <article class="card h-100 d-flex flex-column justify-content-between project-card project-card-secondary">
                 <div>
-                    <div id="freewillCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div id="freewillCarousel" class="carousel slide project-carousel browser-carousel" data-bs-ride="carousel" aria-label="Freewill Store screenshots">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#freewillCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Show Freewill screenshot 1"></button>
+                            <button type="button" data-bs-target="#freewillCarousel" data-bs-slide-to="1" aria-label="Show Freewill screenshot 2"></button>
+                            <button type="button" data-bs-target="#freewillCarousel" data-bs-slide-to="2" aria-label="Show Freewill screenshot 3"></button>
+                            <button type="button" data-bs-target="#freewillCarousel" data-bs-slide-to="3" aria-label="Show Freewill screenshot 4"></button>
+                            <button type="button" data-bs-target="#freewillCarousel" data-bs-slide-to="4" aria-label="Show Freewill screenshot 5"></button>
+                        </div>
                         <div class="carousel-inner bg-dark text-center"
                              style="border-top-left-radius: 24px; border-top-right-radius: 24px;">
                             <div class="carousel-item active">
-                                <img src="~/images/projects/freewill1.png" class="d-block mx-auto"
-                                     style="height: 400px; object-fit: contain;" alt="Freewill Collection 1">
+                                <img src="~/images/projects/freewill1.png" class="d-block mx-auto project-image project-image-contain" loading="lazy" alt="Freewill Collection 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="~/images/projects/freewill2.png" class="d-block mx-auto"
-                                     style="height: 400px; object-fit: contain;" alt="Freewill Collection 2">
+                                <img src="~/images/projects/freewill2.png" class="d-block mx-auto project-image project-image-contain" loading="lazy" alt="Freewill Collection 2">
                             </div>
                             <div class="carousel-item">
-                                <img src="~/images/projects/freewill3.png" class="d-block mx-auto"
-                                     style="height: 400px; object-fit: contain;" alt="Freewill Collection 3">
+                                <img src="~/images/projects/freewill3.png" class="d-block mx-auto project-image project-image-contain" loading="lazy" alt="Freewill Collection 3">
                             </div>
                             <div class="carousel-item">
-                                <img src="~/images/projects/freewill4.png" class="d-block mx-auto"
-                                     style="height: 400px; object-fit: contain;" alt="Freewill Collection 4">
+                                <img src="~/images/projects/freewill4.png" class="d-block mx-auto project-image project-image-contain" loading="lazy" alt="Freewill Collection 4">
                             </div>
                             <div class="carousel-item">
-                                <img src="~/images/projects/freewill5.png" class="d-block mx-auto"
-                                     style="height: 400px; object-fit: contain;" alt="Freewill Collection 5">
+                                <img src="~/images/projects/freewill5.png" class="d-block mx-auto project-image project-image-contain" loading="lazy" alt="Freewill Collection 5">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#freewillCarousel"
@@ -203,23 +265,39 @@
 
                     <div class="card-body p-4">
                         <h4 class="card-title fw-bold text-warning">Freewill Store</h4>
-                        <p class="card-text mt-3 text-muted">
-                            Freewill Store is an e-commerce platform developed for my Freewill Clothing brand. The
-                            platform provides a complete online retail experience, allowing customers to browse
-                            products, manage carts, place orders, and complete purchases through a secure checkout
-                            workflow.
-
-                            Beyond the customer-facing storefront, the system includes a comprehensive administrative
-                            dashboard for managing inventory, orders, product listings, and business operations. The
-                            project demonstrates full-stack web development principles, database management, and
-                            scalable commerce workflows.
+                        <p class="card-text mt-3 text-muted project-description">
+                            Full-stack e-commerce platform created for the Freewill Clothing brand, covering customer
+                            shopping and administrative operations.
                         </p>
+
+                        <div class="project-summary mt-3">
+                            <section>
+                                <h6>Problem</h6>
+                                <p>The clothing brand needed a dedicated storefront and a way to manage products, inventory, and orders.</p>
+                            </section>
+                            <section>
+                                <h6>My role</h6>
+                                <p>Developer responsible for the storefront, customer workflows, administration features, and interface.</p>
+                            </section>
+                            <section>
+                                <h6>What I built</h6>
+                                <ul>
+                                    <li>Product browsing, shopping cart, checkout, and ordering</li>
+                                    <li>Administrative dashboard for inventory and order management</li>
+                                    <li>Product-listing and business-operation workflows</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h6>Outcome or impact</h6>
+                                <p>Provides the Freewill Clothing brand with its own customer storefront and administration system.</p>
+                            </section>
+                        </div>
                     </div>
                 </div>
 
                 <div class="card-body p-4 pt-0">
                     <div class="mb-4">
-                        <h6 class="fw-bold text-white mb-2">Tech Stack:</h6>
+                        <h6 class="fw-bold text-white mb-2">Key technologies</h6>
                         <div class="d-flex flex-wrap gap-2">
                             <span class="badge bg-secondary font-monospace">ASP.NET Core MVC</span>
                             <span class="badge bg-secondary font-monospace">SQL Server</span>
@@ -227,98 +305,175 @@
                             <span class="badge bg-secondary font-monospace">JavaScript</span>
                         </div>
                     </div>
+
+                    <div class="d-flex gap-3 mb-4">
+                        <a href="https://freewillco.xyz" target="_blank" rel="noopener noreferrer"
+                           class="btn btn-primary btn-sm d-flex align-items-center gap-2">
+                            <i class="bi bi-globe"></i> Live Site
+                        </a>
+                    </div>
+
+                    <details class="project-details">
+                        <summary>Detailed technical information</summary>
+                        <p class="text-muted small mt-3 mb-0">
+                            Built with ASP.NET Core MVC, SQL Server, Bootstrap, and JavaScript, including customer-facing
+                            product browsing, cart, secure checkout, and ordering flows, plus administrative inventory,
+                            order, product-listing, and business management.
+                        </p>
+                    </details>
                 </div>
-            </div>
+            </article>
         </div>
 
         <!-- 4. BioScope Unity Project (Left Column-6) -->
-        <div class="col-md-6 mb-4">
-            <div class="card h-100 d-flex flex-column justify-content-between">
+        <div class="col-md-6 mb-4 project-priority-2">
+            <article class="card h-100 d-flex flex-column justify-content-between project-card project-card-secondary project-card-priority">
                 <div>
-                    <!-- Visual Game Header instead of screenshots -->
-                    <div class="d-flex align-items-center justify-content-center bg-dark"
-                         style="height: 200px; border-top-left-radius: 24px; border-top-right-radius: 24px; border-bottom: 1px solid rgba(255,255,255,0.1); background: linear-gradient(135deg, #1e1e2e 0%, #11111b 100%);">
-                        <div class="text-center">
-                            <div class="display-3 text-info"><i class="bi bi-unity"></i></div>
-                            <small class="text-muted font-monospace">Screenshots Coming Soon</small>
+                    <div id="bioscopeCarousel" class="carousel slide project-carousel phone-carousel" data-bs-ride="carousel" aria-label="BioScope AR anatomy app screenshots">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#bioscopeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Show BioScope screenshot 1"></button>
+                            <button type="button" data-bs-target="#bioscopeCarousel" data-bs-slide-to="1" aria-label="Show BioScope screenshot 2"></button>
+                            <button type="button" data-bs-target="#bioscopeCarousel" data-bs-slide-to="2" aria-label="Show BioScope screenshot 3"></button>
+                            <button type="button" data-bs-target="#bioscopeCarousel" data-bs-slide-to="3" aria-label="Show BioScope screenshot 4"></button>
                         </div>
+                        <div class="carousel-inner bg-dark text-center"
+                             style="border-top-left-radius: 24px; border-top-right-radius: 24px;">
+                            <div class="carousel-item active">
+                                <img src="~/images/projects/bioscope-welcome.png" class="d-block mx-auto project-image project-image-contain" loading="lazy" alt="BioScope AR anatomy welcome screen">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="~/images/projects/bioscope-scan.png" class="d-block mx-auto project-image project-image-contain" loading="lazy" alt="BioScope scanning a surface for AR placement">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="~/images/projects/bioscope-overview.png" class="d-block mx-auto project-image project-image-contain" loading="lazy" alt="BioScope skeleton overview and learning controls">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="~/images/projects/bioscope-ai.png" class="d-block mx-auto project-image project-image-contain" loading="lazy" alt="BioScope selected femur with Gemini AI explanation">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#bioscopeCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#bioscopeCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
 
                     <div class="card-body p-4">
-                        <h4 class="card-title fw-bold text-info">BioScope</h4>
-                        <p class="card-text mt-3 text-muted">
-                            BioScope is a gamified anatomy learning platform developed as a Final Year Project to make
-                            human anatomy education more engaging and accessible. The application allows users to
-                            explore detailed 3D anatomical models, interact with body systems, identify organs, and
-                            reinforce their understanding through integrated learning activities and assessments.
-                            <br><br>
-                            Designed for students and self-learners, BioScope combines immersive visualization with
-                            educational content to bridge the gap between traditional textbooks and interactive digital
-                            learning.
+                        <div class="d-flex justify-content-between align-items-center gap-3">
+                            <h4 class="card-title fw-bold text-info mb-0">BioScope</h4>
+                            <span class="badge bg-secondary">Apr–Jul 2026</span>
+                        </div>
+                        <p class="card-text mt-3 text-muted project-description">
+                            AI-powered Android AR anatomy application developed with Unity, C#, AR Foundation, and
+                            Gemini AI, featuring interactive 3D anatomy, voice interaction, and AI-generated quizzes.
                         </p>
 
-                        <div class="mt-3">
-                            <h6 class="fw-bold text-white mb-2">Features Highlight:</h6>
-                            <ul class="text-muted ps-3 small">
-                                <li>Fully interactive 3D anatomy models</li>
-                                <li>Organ identification and exploration tools</li>
-                                <li>Educational information panels and system descriptions</li>
-                                <li>Quiz and assessment features for knowledge reinforcement</li>
-                                <li>Intuitive navigation and user-centered interface</li>
-                                <li>Built in Unity using C# and modern game development techniques</li>
-                            </ul>
+                        <div class="project-summary mt-3">
+                            <section>
+                                <h6>Problem</h6>
+                                <p>Traditional anatomy materials do not provide the same spatial interaction or adaptive learning support as an immersive application.</p>
+                            </section>
+                            <section>
+                                <h6>My role</h6>
+                                <p>Final Year Project Developer responsible for application logic, AR interaction, AI features, interface behavior, testing, and Android optimization.</p>
+                            </section>
+                            <section>
+                                <h6>What I built</h6>
+                                <ul>
+                                    <li>Gaze-based selection and information panels for interactive 3D anatomy</li>
+                                    <li>Gemini AI explanations, personalized learning, and generated quizzes</li>
+                                    <li>Voice recognition, speech synthesis, and accessible mobile UI</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h6>Outcome or impact</h6>
+                                <p>Combines immersive anatomy visualization and AI-assisted learning in one educational application.</p>
+                            </section>
                         </div>
                     </div>
                 </div>
 
                 <div class="card-body p-4 pt-0">
                     <div class="mb-4">
-                        <h6 class="fw-bold text-white mb-2">Tech Stack:</h6>
+                        <h6 class="fw-bold text-white mb-2">Key technologies</h6>
                         <div class="d-flex flex-wrap gap-2">
                             <span class="badge bg-secondary font-monospace">Unity</span>
                             <span class="badge bg-secondary font-monospace">C#</span>
-                            <span class="badge bg-secondary font-monospace">URP</span>
-                            <span class="badge bg-secondary font-monospace">3D Environment Design</span>
+                            <span class="badge bg-secondary font-monospace">AR Foundation</span>
+                            <span class="badge bg-secondary font-monospace">Gemini AI</span>
+                            <span class="badge bg-secondary font-monospace">Android</span>
+                            <span class="badge bg-secondary font-monospace">XR Interaction</span>
+                            <span class="badge bg-secondary font-monospace">UI Design</span>
                         </div>
                     </div>
+
+                    <details class="project-details">
+                        <summary>Detailed technical information</summary>
+                        <ul class="text-muted small mt-3 mb-0 ps-3">
+                            <li>Interactive anatomical models with gaze-based selection and bone information panels</li>
+                            <li>Unity C# application logic and XR interaction mechanics</li>
+                            <li>AR Foundation integration for the Android experience</li>
+                            <li>Gemini AI explanations, personalized learning, and AI-generated quizzes</li>
+                            <li>Voice recognition, speech synthesis, usability evaluation, and Android performance work</li>
+                        </ul>
+                    </details>
                 </div>
-            </div>
+            </article>
         </div>
 
         <!-- 5. Portfolio Website (Right Column-6) -->
-        <div class="col-md-6 mb-4">
-            <div class="card h-100 d-flex flex-column justify-content-between">
+        <div class="col-md-6 mb-4 project-priority-5">
+            <article class="card h-100 d-flex flex-column justify-content-between project-card project-card-secondary">
                 <div>
 
-                    <div class="d-flex align-items-center justify-content-center bg-dark"
-                         style="height: 200px; border-top-left-radius: 24px; border-top-right-radius: 24px; border-bottom: 1px solid rgba(255,255,255,0.1); background: linear-gradient(135deg, #1e1e2e 0%, #0f172a 100%);">
+                    <div class="d-flex align-items-center justify-content-center bg-dark project-visual browser-mockup"
+                         style="border-top-left-radius: 24px; border-top-right-radius: 24px; border-bottom: 1px solid rgba(255,255,255,0.1); background: linear-gradient(135deg, #1e1e2e 0%, #0f172a 100%);">
                         <div class="text-center">
-                            <div class="carousel-item">
-                                <img src="~/images/projects/portfolio1.png" class="d-block mx-auto"
-                                     style="height: 400px; object-fit: contain;" alt="Freewill Collection 2">
-                            </div>
+                            <img src="~/images/projects/portfolio1.png" class="d-block mx-auto project-image project-image-contain" loading="lazy" alt="Portfolio website homepage">
                         </div>
                     </div>
 
                     <div class="card-body p-4">
-                        <h4 class="card-title fw-bold text-primary">Portfolio Website</h4>
-                        <p class="card-text mt-3 text-muted">
-                            This portfolio website was designed and developed to showcase my technical projects,
-                            entrepreneurial ventures, and software engineering experience. Rather than relying on
-                            website builders or templates, the platform was built from scratch using ASP.NET Core MVC
-                            and deployed through a containerized cloud environment.
-                            <br><br>
-                            The site features a modern recruiter-focused design, responsive layouts, custom
-                            glassmorphism UI components, animated visual effects, and automated deployment workflows. It
-                            serves as both a professional portfolio and a demonstration of full-stack development
-                            skills.
+                        <div class="d-flex justify-content-between align-items-center gap-3">
+                            <h4 class="card-title fw-bold text-primary mb-0">Portfolio Website</h4>
+                            <span class="badge bg-secondary">2026</span>
+                        </div>
+                        <p class="card-text mt-3 text-muted project-description">
+                            Custom ASP.NET Core MVC portfolio for presenting software projects, technical experience,
+                            and entrepreneurial work.
                         </p>
+
+                        <div class="project-summary mt-3">
+                            <section>
+                                <h6>Problem</h6>
+                                <p>I needed a focused platform for presenting my work without relying on a website builder or template.</p>
+                            </section>
+                            <section>
+                                <h6>My role</h6>
+                                <p>Designed, developed, containerized, and deployed the website.</p>
+                            </section>
+                            <section>
+                                <h6>What I built</h6>
+                                <ul>
+                                    <li>Responsive Razor and Bootstrap layouts</li>
+                                    <li>Custom glass-style components and visual effects</li>
+                                    <li>Containerized cloud deployment workflow</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h6>Outcome or impact</h6>
+                                <p>Creates one professional destination for reviewing my projects, experience, résumé, and contact information.</p>
+                            </section>
+                        </div>
                     </div>
                 </div>
 
                 <div class="card-body p-4 pt-0">
                     <div class="mb-3">
-                        <h6 class="fw-bold text-white mb-2">Tech Stack:</h6>
+                        <h6 class="fw-bold text-white mb-2">Key technologies</h6>
                         <div class="d-flex flex-wrap gap-2">
                             <span class="badge bg-secondary font-monospace">ASP.NET Core MVC</span>
                             <span class="badge bg-secondary font-monospace">Docker</span>
@@ -333,8 +488,16 @@
                             <i class="bi bi-github"></i> View Source Code
                         </a>
                     </div>
+
+                    <details class="project-details mt-4">
+                        <summary>Detailed technical information</summary>
+                        <p class="text-muted small mt-3 mb-0">
+                            The site uses ASP.NET Core MVC, Razor views, Bootstrap 5, Docker, and Render deployment, with
+                            responsive layouts, custom interface styling, visual effects, and an automated deployment workflow.
+                        </p>
+                    </details>
                 </div>
-            </div>
+            </article>
         </div>
     </div>
 </div>
