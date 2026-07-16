@@ -1,13 +1,73 @@
+@{
+    const string siteName = "Keepon Mirishoi Ole Supuko Portfolio";
+    const string siteUrl = "https://keepon-portfolio.onrender.com";
+    var pageTitle = ViewData["Title"]?.ToString() ?? "Keepon Mirishoi Ole Supuko | Software Engineer & Startup Founder";
+    var description = ViewData["Description"]?.ToString() ?? "Portfolio of Keepon Mirishoi Ole Supuko, a software engineer and startup founder building full-stack, Flutter, Unity XR, AR, and AI-powered applications.";
+    var canonicalPath = ViewData["CanonicalPath"]?.ToString() ?? Context.Request.Path.Value ?? "/";
+    var canonicalUrl = $"{siteUrl}{(canonicalPath == "/" ? string.Empty : canonicalPath)}";
+    const string socialImage = $"{siteUrl}/images/social-preview.png";
+}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - PersonalProfile</title>
+    <title>@pageTitle</title>
+    <meta name="description" content="@description" />
+    <meta name="author" content="Keepon Mirishoi Ole Supuko" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="@canonicalUrl" />
+
+    <meta property="og:title" content="@pageTitle" />
+    <meta property="og:description" content="@description" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="@canonicalUrl" />
+    <meta property="og:image" content="@socialImage" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Keepon Mirishoi Ole Supuko — Software Engineer and Startup Founder" />
+    <meta property="og:site_name" content="@siteName" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="@pageTitle" />
+    <meta name="twitter:description" content="@description" />
+    <meta name="twitter:image" content="@socialImage" />
+    <meta name="twitter:image:alt" content="Keepon Mirishoi Ole Supuko — Software Engineer and Startup Founder" />
+
+    <link rel="icon" href="~/favicon.ico" sizes="any" />
+    <link rel="manifest" href="~/site.webmanifest" />
+    <meta name="theme-color" content="#050b14" />
     <script type="importmap"></script>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    @if (canonicalPath == "/")
+    {
+        <script type="application/ld+json">
+        {
+          "@@context": "https://schema.org",
+          "@@type": "Person",
+          "name": "Keepon Mirishoi Ole Supuko",
+          "url": "https://keepon-portfolio.onrender.com",
+          "image": "https://keepon-portfolio.onrender.com/images/profile.png",
+          "jobTitle": "Software Engineering Student and Startup Co-Founder",
+          "email": "mailto:skmephep@gmail.com",
+          "address": {
+            "@@type": "PostalAddress",
+            "addressLocality": "Kuala Lumpur",
+            "addressCountry": "MY"
+          },
+          "alumniOf": {
+            "@@type": "CollegeOrUniversity",
+            "name": "Xiamen University Malaysia"
+          },
+          "sameAs": [
+            "https://github.com/Keepon-blip",
+            "https://www.linkedin.com/in/keepon-mirishoi-8262b81a6"
+          ]
+        }
+        </script>
+    }
 </head>
 <body>
     <div class="tech-background">

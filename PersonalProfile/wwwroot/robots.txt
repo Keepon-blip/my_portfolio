@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://keepon-portfolio.onrender.com/sitemap.xml

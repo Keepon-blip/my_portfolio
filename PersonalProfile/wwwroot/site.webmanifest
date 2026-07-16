@@ -1,0 +1,16 @@
+{
+  "name": "Keepon Mirishoi Ole Supuko Portfolio",
+  "short_name": "Keepon Portfolio",
+  "description": "Software engineering and startup portfolio of Keepon Mirishoi Ole Supuko.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050b14",
+  "theme_color": "#050b14",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}
