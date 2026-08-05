@@ -13,31 +13,37 @@ public class HomeController : Controller
         _logger = logger;
     }
 
+    [HttpGet("/")]
     public IActionResult Index()
     {
         return View();
     }
 
+    [HttpGet("/about")]
     public IActionResult About()
     {
         return View();
     }
 
+    [HttpGet("/contact")]
     public IActionResult Contact()
     {
         return View();
     }
 
+    [HttpGet("/projects")]
     public IActionResult Projects()
     {
         return View();
     }
 
+    [HttpGet("/resume")]
     public IActionResult Resume()
     {
         return View();
     }
 
+    [HttpGet("/privacy")]
     public IActionResult Privacy()
     {
         return View();

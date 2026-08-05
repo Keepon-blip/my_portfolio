@@ -14,6 +14,29 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+var legacyRoutes = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
+{
+    ["/Home/Index"] = "/",
+    ["/Home/About"] = "/about",
+    ["/Home/Projects"] = "/projects",
+    ["/Home/Resume"] = "/resume",
+    ["/Home/Contact"] = "/contact",
+    ["/Home/Privacy"] = "/privacy"
+};
+
+app.Use(async (context, next) =>
+{
+    if (HttpMethods.IsGet(context.Request.Method) &&
+        legacyRoutes.TryGetValue(context.Request.Path.Value ?? string.Empty, out var destination))
+    {
+        context.Response.Redirect(destination, permanent: true);
+        return;
+    }
+
+    await next();
+});
+
 app.UseRouting();
 
 app.UseAuthorization();

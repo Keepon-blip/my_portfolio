@@ -35,6 +35,8 @@
     <meta name="twitter:image:alt" content="Keepon Mirishoi Ole Supuko — Software Engineer and Startup Founder" />
 
     <link rel="icon" href="~/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="512x512" href="~/images/brand/favicon-dark.png" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/png" sizes="512x512" href="~/images/brand/favicon-light.png" media="(prefers-color-scheme: light)" />
     <link rel="manifest" href="~/site.webmanifest" />
     <meta name="theme-color" content="#050b14" />
     <script type="importmap"></script>
@@ -75,9 +77,11 @@
         <div class="tech-overlay"></div>
     </div>
     <header class="top-identity-wrapper">
-        <a class="top-identity" asp-controller="Home" asp-action="Index">Keepon Mirishoi Ole Supuko</a>
+        <a class="top-identity" asp-controller="Home" asp-action="Index" aria-label="Keepon Mirishoi Ole Supuko - home">
+            <img src="~/images/brand/logo-light.png" alt="" class="brand-logo brand-logo-header" />
+        </a>
     </header>
-    <div class="container">
+    <div class="container site-main-shell">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
@@ -87,7 +91,9 @@
         <div class="container text-light">
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <h5 class="fw-bold mb-1 text-white">Keepon Mirishoi Ole Supuko</h5>
+                    <a class="footer-brand d-inline-block mb-2" asp-controller="Home" asp-action="Index" aria-label="Keepon Mirishoi Ole Supuko - home">
+                        <img src="~/images/brand/logo-light.png" alt="" class="brand-logo brand-logo-footer" />
+                    </a>
                     <p class="small text-muted mb-0">Software Engineering Student | Startup Co-Founder</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
@@ -105,22 +111,22 @@
 
     <!-- Floating Bottom Navigation Dock -->
     <nav class="floating-dock">
-        <a asp-controller="Home" asp-action="Index" class="dock-item @(ViewContext.RouteData.Values["action"]?.ToString() == "Index" ? "active" : "")" data-label="Home">
+        <a asp-controller="Home" asp-action="Index" class="dock-item @(ViewContext.RouteData.Values["action"]?.ToString() == "Index" ? "active" : "")" data-label="Home" aria-label="Home">
             <i class="bi bi-house-fill"></i>
         </a>
-        <a asp-controller="Home" asp-action="About" class="dock-item @(ViewContext.RouteData.Values["action"]?.ToString() == "About" ? "active" : "")" data-label="About">
+        <a asp-controller="Home" asp-action="About" class="dock-item @(ViewContext.RouteData.Values["action"]?.ToString() == "About" ? "active" : "")" data-label="About" aria-label="About">
             <i class="bi bi-person-fill"></i>
         </a>
-        <a asp-controller="Home" asp-action="Projects" class="dock-item @(ViewContext.RouteData.Values["action"]?.ToString() == "Projects" ? "active" : "")" data-label="Projects">
+        <a asp-controller="Home" asp-action="Projects" class="dock-item @(ViewContext.RouteData.Values["action"]?.ToString() == "Projects" ? "active" : "")" data-label="Projects" aria-label="Projects">
             <i class="bi bi-briefcase-fill"></i>
         </a>
-        <a asp-controller="Home" asp-action="Resume" class="dock-item @(ViewContext.RouteData.Values["action"]?.ToString() == "Resume" ? "active" : "")" data-label="Resume">
+        <a asp-controller="Home" asp-action="Resume" class="dock-item @(ViewContext.RouteData.Values["action"]?.ToString() == "Resume" ? "active" : "")" data-label="Resume" aria-label="Resume">
             <i class="bi bi-file-earmark-text-fill"></i>
         </a>
-        <a href="https://github.com/Keepon-blip" target="_blank" rel="noopener noreferrer" class="dock-item" data-label="GitHub">
+        <a href="https://github.com/Keepon-blip" target="_blank" rel="noopener noreferrer" class="dock-item" data-label="GitHub" aria-label="GitHub profile">
             <i class="bi bi-github"></i>
         </a>
-        <a href="https://www.linkedin.com/in/keepon-mirishoi-8262b81a6" target="_blank" rel="noopener noreferrer" class="dock-item" data-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/keepon-mirishoi-8262b81a6" target="_blank" rel="noopener noreferrer" class="dock-item" data-label="LinkedIn" aria-label="LinkedIn profile">
             <i class="bi bi-linkedin"></i>
         </a>
     </nav>
