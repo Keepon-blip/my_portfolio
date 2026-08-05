@@ -15,13 +15,22 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-weight: 400;
     line-height: 1.55;
     background: #060b13; /* Solid deep cyber dark background */
     color: var(--light-text);
-    margin-bottom: 120px; /* Space for the floating bottom dock */
+    margin: 0;
     overflow-x: hidden; /* Prevent horizontal scrollbars from floating background */
+}
+
+.site-main-shell {
+    flex: 1 0 auto;
+    width: 100%;
+    padding-top: 2.75rem;
 }
 
 /* Typography */
@@ -71,12 +80,13 @@ h6 {
 
 /* Footer */
 .footer {
+    flex: 0 0 auto;
     background-color: rgba(30, 30, 46, 0.25) !important;
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     color: #ccd0d4;
-    padding: 2.5rem 0;
+    padding: 2.5rem 0 6rem;
     margin-top: 6rem;
     width: 100%;
 }
@@ -92,14 +102,31 @@ h6 {
 
 .top-identity {
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 0.95rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.7);
+    display: inline-flex;
+    align-items: center;
     text-decoration: none;
     transition: color 0.3s ease, opacity 0.3s ease;
     opacity: 0.75;
+}
+
+.brand-logo {
+    display: block;
+    width: auto;
+    object-fit: contain;
+}
+
+.brand-logo-header {
+    height: 54px;
+    max-width: min(230px, 42vw);
+}
+
+.brand-logo-footer {
+    height: 64px;
+    max-width: min(260px, 72vw);
+}
+
+.footer-brand {
+    border-radius: 10px;
 }
 
 .top-identity:hover {
@@ -112,6 +139,15 @@ h6 {
         position: absolute;
         top: 25px;
         left: 20px;
+    }
+
+    .site-main-shell {
+        padding-top: 3.25rem;
+    }
+
+    .brand-logo-header {
+        height: 48px;
+        max-width: 150px;
     }
 }
 
@@ -171,31 +207,60 @@ h6 {
 /* Profile Frame */
 .profile-frame {
     position: relative;
-    border-radius: 30px;
-    overflow: hidden;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(5px);
-    transform: rotate(2deg);
-    transition: transform 0.5s ease;
-    width: 50%;
+    isolation: isolate;
+    width: min(72%, 360px);
+    padding: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.17);
+    border-radius: 38px 38px 64px 38px;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(0, 206, 201, 0.035));
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.48), 0 0 42px rgba(0, 206, 201, 0.08);
+    transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-frame::before {
+    content: "";
+    position: absolute;
+    inset: -15px;
+    z-index: -2;
+    border: 1px solid rgba(0, 206, 201, 0.24);
+    border-radius: 48px 48px 76px 48px;
+    clip-path: polygon(0 0, 38% 0, 38% 2px, 100% 2px, 100% 64%, calc(100% - 2px) 64%, calc(100% - 2px) 100%, 62% 100%, 62% calc(100% - 2px), 0 calc(100% - 2px));
+    transform: rotate(-3deg);
+}
+
+.profile-frame::after {
+    content: "";
+    position: absolute;
+    right: -8px;
+    bottom: 28px;
+    z-index: 2;
+    width: 42px;
+    height: 42px;
+    border-right: 3px solid var(--accent-color);
+    border-bottom: 3px solid var(--accent-color);
+    border-radius: 0 0 20px 0;
+    filter: drop-shadow(0 0 8px rgba(0, 206, 201, 0.46));
+    pointer-events: none;
 }
 
 .profile-frame:hover {
-    transform: rotate(0deg) scale(1.04);
-    box-shadow: 0 25px 60px rgba(0, 206, 201, 0.2);
-    border-color: rgba(0, 206, 201, 0.4);
+    transform: translateY(-6px) rotate(-1deg);
+    box-shadow: 0 30px 78px rgba(0, 0, 0, 0.52), 0 0 54px rgba(0, 206, 201, 0.16);
+    border-color: rgba(0, 206, 201, 0.44);
 }
 
 .profile-frame img {
     width: 100%;
     height: auto;
     display: block;
-    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    border-radius: 30px 30px 56px 30px;
+    clip-path: polygon(9% 0, 100% 0, 100% 88%, 88% 100%, 0 100%, 0 9%);
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
 }
 
 .profile-frame:hover img {
-    transform: scale(1.08);
+    transform: scale(1.035);
+    filter: saturate(1.04) contrast(1.02);
 }
 
 /* Responsive project media */
@@ -818,7 +883,7 @@ h6 {
         padding: 3px 8px;
     }
     body {
-        margin-bottom: 90px;
+        margin-bottom: 0;
     }
 }
 
@@ -1046,7 +1111,7 @@ h6 {
     .footer {
         width: 100%;
         margin-top: 3rem !important;
-        padding: 1.5rem 0 !important;
+        padding: 1.5rem 0 5.5rem !important;
         text-align: center;
     }
 
