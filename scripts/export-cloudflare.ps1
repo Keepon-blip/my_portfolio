@@ -10,11 +10,7 @@ $repositoryRoot = Split-Path -Parent $PSScriptRoot
 $sourceAssets = Join-Path $repositoryRoot "PersonalProfile\wwwroot"
 $outputPath = Join-Path $repositoryRoot $OutputDirectory
 
-if (Test-Path $outputPath) {
-    Remove-Item -LiteralPath $outputPath -Recurse -Force
-}
-
-New-Item -ItemType Directory -Path $outputPath | Out-Null
+New-Item -ItemType Directory -Path $outputPath -Force | Out-Null
 Copy-Item -Path (Join-Path $sourceAssets "*") -Destination $outputPath -Recurse -Force
 
 $routes = @(

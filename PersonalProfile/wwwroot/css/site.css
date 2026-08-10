@@ -55,6 +55,26 @@ h6 {
     font-size: clamp(3.2rem, 6.25vw, 5rem);
 }
 
+.home-hero-row {
+    min-height: clamp(620px, 82vh, 860px);
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.home-hero-content {
+    width: min(100%, 920px);
+    padding-right: clamp(0rem, 4vw, 3rem);
+}
+
+.home-hero-content > p {
+    max-width: 720px;
+}
+
+.home-capabilities {
+    margin-top: 0;
+    padding-top: clamp(1rem, 3vw, 2.5rem);
+}
+
 /* Navbar */
 .navbar {
     background-color: rgba(30, 30, 46, 0.7) !important;
@@ -1008,8 +1028,13 @@ h6 {
 
     .home-hero .row {
         min-height: auto !important;
-        padding-top: 6rem;
-        padding-bottom: 1.5rem;
+        padding-top: 4.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .home-hero-content {
+        width: 100%;
+        padding-right: 0;
     }
 
     .home-hero .display-1 {
@@ -1028,6 +1053,10 @@ h6 {
         font-size: 1.05rem;
     }
 
+    .home-hero-content > p.mb-5 {
+        margin-bottom: 1.75rem !important;
+    }
+
     .home-hero .profile-frame,
     .profile-frame {
         width: min(66vw, 240px);
@@ -1035,7 +1064,7 @@ h6 {
         transform: none;
     }
 
-    .home-hero + .row {
+    .home-capabilities {
         margin-top: 0 !important;
         padding-top: 1rem !important;
     }
