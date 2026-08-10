@@ -1,4 +1,18 @@
+using Microsoft.AspNetCore.DataProtection;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// Keep logging portable across local, container, and CI environments.
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
+
+var dataProtectionKeysPath = Environment.GetEnvironmentVariable("DATA_PROTECTION_KEYS_PATH");
+if (!string.IsNullOrWhiteSpace(dataProtectionKeysPath))
+{
+    builder.Services
+        .AddDataProtection()
+        .PersistKeysToFileSystem(new DirectoryInfo(dataProtectionKeysPath));
+}
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

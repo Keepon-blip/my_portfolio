@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://keepon-portfolio.pages.dev/sitemap.xml
