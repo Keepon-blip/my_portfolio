@@ -1,6 +1,6 @@
 param(
     [string]$BaseUrl = "http://127.0.0.1:5225",
-    [string]$SiteUrl = "https://keepon-portfolio.pages.dev",
+    [string]$SiteUrl = "https://keepon.pages.dev",
     [string]$OutputDirectory = "cloudflare-dist"
 )
 

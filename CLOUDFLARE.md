@@ -11,7 +11,7 @@ The deployable static site is stored in `cloudflare-dist`.
 - Root directory: leave blank
 
 The expected Pages project name is `keepon-portfolio`, producing the default URL
-`https://keepon-portfolio.pages.dev`. If a different project name is used, regenerate
+`https://keepon.pages.dev`. If a different project name is used, regenerate
 the export with the final URL so canonical and social metadata remain accurate:
 
 ```powershell
